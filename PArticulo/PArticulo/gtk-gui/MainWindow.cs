@@ -13,10 +13,10 @@ public partial class MainWindow
 	private global::Gtk.Action categoriaEditAction;
 	private global::Gtk.VBox vbox1;
 	private global::Gtk.Notebook notebook1;
-	private global::PArticulo.ListArticuloView listarticuloview1;
-	private global::Gtk.Label label1;
 	private global::PArticulo.ListCategoriaView listcategoriaview1;
 	private global::Gtk.Label label2;
+	private global::PArticulo.ListArticuloView listarticuloview1;
+	private global::Gtk.Label label1;
 
 	protected virtual void Build ()
 	{
@@ -53,31 +53,31 @@ public partial class MainWindow
 		this.notebook1 = new global::Gtk.Notebook ();
 		this.notebook1.CanFocus = true;
 		this.notebook1.Name = "notebook1";
-		this.notebook1.CurrentPage = 0;
-		// Container child notebook1.Gtk.Notebook+NotebookChild
-		this.listarticuloview1 = new global::PArticulo.ListArticuloView ();
-		this.listarticuloview1.Events = ((global::Gdk.EventMask)(256));
-		this.listarticuloview1.Name = "listarticuloview1";
-		this.notebook1.Add (this.listarticuloview1);
-		// Notebook tab
-		this.label1 = new global::Gtk.Label ();
-		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Artículo");
-		this.notebook1.SetTabLabel (this.listarticuloview1, this.label1);
-		this.label1.ShowAll ();
+		this.notebook1.CurrentPage = 1;
 		// Container child notebook1.Gtk.Notebook+NotebookChild
 		this.listcategoriaview1 = new global::PArticulo.ListCategoriaView ();
 		this.listcategoriaview1.Events = ((global::Gdk.EventMask)(256));
 		this.listcategoriaview1.Name = "listcategoriaview1";
 		this.notebook1.Add (this.listcategoriaview1);
-		global::Gtk.Notebook.NotebookChild w3 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1 [this.listcategoriaview1]));
-		w3.Position = 1;
 		// Notebook tab
 		this.label2 = new global::Gtk.Label ();
 		this.label2.Name = "label2";
 		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("Categoría");
 		this.notebook1.SetTabLabel (this.listcategoriaview1, this.label2);
 		this.label2.ShowAll ();
+		// Container child notebook1.Gtk.Notebook+NotebookChild
+		this.listarticuloview1 = new global::PArticulo.ListArticuloView ();
+		this.listarticuloview1.Events = ((global::Gdk.EventMask)(256));
+		this.listarticuloview1.Name = "listarticuloview1";
+		this.notebook1.Add (this.listarticuloview1);
+		global::Gtk.Notebook.NotebookChild w3 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1 [this.listarticuloview1]));
+		w3.Position = 1;
+		// Notebook tab
+		this.label1 = new global::Gtk.Label ();
+		this.label1.Name = "label1";
+		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Artículo");
+		this.notebook1.SetTabLabel (this.listarticuloview1, this.label1);
+		this.label1.ShowAll ();
 		this.vbox1.Add (this.notebook1);
 		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.notebook1]));
 		w4.Position = 1;

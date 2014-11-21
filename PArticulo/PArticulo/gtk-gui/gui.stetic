@@ -67,24 +67,24 @@
           <widget class="Gtk.Notebook" id="notebook1">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
-            <property name="CurrentPage">0</property>
+            <property name="CurrentPage">1</property>
             <child>
-              <widget class="PArticulo.ListArticuloView" id="listarticuloview1">
+              <widget class="PArticulo.ListCategoriaView" id="listcategoriaview1">
                 <property name="MemberName" />
                 <property name="Events">ButtonPressMask</property>
               </widget>
             </child>
             <child>
-              <widget class="Gtk.Label" id="label1">
+              <widget class="Gtk.Label" id="label2">
                 <property name="MemberName" />
-                <property name="LabelProp" translatable="yes">Artículo</property>
+                <property name="LabelProp" translatable="yes">Categoría</property>
               </widget>
               <packing>
                 <property name="type">tab</property>
               </packing>
             </child>
             <child>
-              <widget class="PArticulo.ListCategoriaView" id="listcategoriaview1">
+              <widget class="PArticulo.ListArticuloView" id="listarticuloview1">
                 <property name="MemberName" />
                 <property name="Events">ButtonPressMask</property>
               </widget>
@@ -93,9 +93,9 @@
               </packing>
             </child>
             <child>
-              <widget class="Gtk.Label" id="label2">
+              <widget class="Gtk.Label" id="label1">
                 <property name="MemberName" />
-                <property name="LabelProp" translatable="yes">Categoría</property>
+                <property name="LabelProp" translatable="yes">Artículo</property>
               </widget>
               <packing>
                 <property name="type">tab</property>
